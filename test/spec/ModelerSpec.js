@@ -6,12 +6,12 @@ import Modeler from 'bpmn-js/lib/Modeler';
 
 import FooModule from '../../lib';
 
-insertCSS('styles', require('assets/css/styles.css'));
-
 insertCSS('diagram-js', require('bpmn-js/dist/assets/diagram-js.css'));
 insertCSS('bpmn-font', require('bpmn-js/dist/assets/bpmn-font/css/bpmn-embedded.css'));
 
 insertCSS('bpmn-js', require('bpmn-js/dist/assets/bpmn-js.css'));
+
+insertCSS('styles', require('assets/css/styles.css'));
 
 var singleStart = window.__env__ && window.__env__.SINGLE_START === 'true';
 
