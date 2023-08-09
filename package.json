@@ -1,0 +1,73 @@
+{
+  "name": "hackdays-2023",
+  "version": "0.21.0",
+  "description": "bpmn-js integration for bpmnlint",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "source": "lib/index.js",
+  "umd:main": "dist/hackdays-2023.umd.js",
+  "scripts": {
+    "all": "run-s lint test distro",
+    "lint": "eslint .",
+    "start": "cross-env SINGLE_START=true npm run dev",
+    "test": "karma start --no-auto-test --single-run",
+    "dev": "karma start",
+    "distro": "run-s build test:build copy-assets",
+    "build": "NODE_ENV=production rollup -c --bundleConfigAsCjs",
+    "build:watch": "npm run build -- -w",
+    "test:build": "karma start test/distro/karma.conf.js",
+    "copy-assets": "cpx assets/css/* dist/assets/css/ -v",
+    "prepublishOnly": "run-s distro"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/philippfromme/hackdays-2023.git"
+  },
+  "author": "Philipp Fromme <https://github.com/philippfromme>",
+  "contributors": [
+    {
+      "name": "Christian Konrad",
+      "url": "https://github.com/christian-konrad"
+    }
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.2",
+    "@rollup/plugin-node-resolve": "^15.1.0",
+    "@rollup/plugin-terser": "^0.4.3",
+    "bpmn-js": "^13.2.0",
+    "chai": "^4.3.7",
+    "cpx": "^1.5.0",
+    "cross-env": "^7.0.3",
+    "diagram-js": "^12.2.0",
+    "eslint": "^8.34.0",
+    "eslint-plugin-bpmn-io": "^1.0.0",
+    "karma": "^6.4.1",
+    "karma-chrome-launcher": "^3.1.1",
+    "karma-debug-launcher": "^0.0.5",
+    "karma-env-preprocessor": "^0.1.1",
+    "karma-mocha": "^2.0.1",
+    "karma-sinon-chai": "^2.0.2",
+    "karma-webpack": "^5.0.0",
+    "mocha": "^10.0.0",
+    "mocha-test-container-support": "^0.2.0",
+    "npm-run-all": "^4.1.5",
+    "puppeteer": "^20.7.4",
+    "rollup": "^3.26.2",
+    "rollup-plugin-string": "^3.0.0",
+    "sinon": "^15.0.0",
+    "sinon-chai": "^3.7.0",
+    "webpack": "^5.75.0"
+  },
+  "dependencies": {
+    "min-dash": "^4.1.1",
+    "min-dom": "^4.1.0"
+  },
+  "peerDependencies": {
+    "bpmn-js": "*",
+    "diagram-js": "*"
+  },
+  "files": [
+    "dist"
+  ]
+}
