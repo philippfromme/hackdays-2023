@@ -43,3 +43,66 @@
 .djs-context-pad.open {
   display: flex;
 }
+
+
+/* Append Nodes */
+
+.djs-append-nodes {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.djs-append-node-circle {
+    width: 6px;
+    height: 6px;
+    background: var(--element-selected-outline-stroke-color);
+    border: 2px solid var(--element-selected-outline-stroke-color);
+    border-radius: 50px;
+    opacity: 0.6;
+    margin: auto;
+    transition: 0.1s;
+}
+
+.djs-append-nodes:hover .djs-append-node-circle {
+    width: 20px;
+    height: 20px;
+    opacity: 1;
+    background: white;
+}
+
+.djs-append-nodes:hover .djs-append-node-circle:after {
+    content: '+';
+    margin: auto;
+    text-align: center;
+    display: block;
+    color: var(--element-selected-outline-stroke-color);
+    font-size: 24px;
+    line-height: 18px;
+}
+
+.djs-append-node-circle:hover,
+.djs-append-nodes:hover .djs-append-node-circle:hover {
+    width: 20px;
+    height: 20px;
+    background: var(--element-selected-outline-stroke-color);
+    border-color: var(--element-selected-outline-stroke-color);
+}
+
+.djs-append-node-circle:hover:after,
+.djs-append-nodes:hover .djs-append-node-circle:hover:after {
+    content: '+';
+    margin: auto;
+    text-align: center;
+    display: block;
+    color: white;
+    font-size: 24px;
+    line-height: 18px;
+}
+
+/* Hack to hide old pad */
+
+.djs-context-pad:not(.next) {
+    display: none !important;
+}
