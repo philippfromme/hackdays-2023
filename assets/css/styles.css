@@ -61,7 +61,7 @@
 
 /* Append Nodes */
 
-.djs-append-nodes {
+.djs-append-node {
     width: 40px;
     height: 40px;
     display: flex;
@@ -79,14 +79,14 @@
     transition: 0.1s;
 }
 
-.djs-append-nodes:hover .djs-append-node-circle {
+.djs-append-node:hover .djs-append-node-circle {
     width: 20px;
     height: 20px;
     opacity: 1;
     background: white;
 }
 
-.djs-append-nodes:hover .djs-append-node-circle:after {
+.djs-append-node:hover .djs-append-node-circle:after {
     content: '+';
     margin: auto;
     text-align: center;
@@ -97,7 +97,7 @@
 }
 
 .djs-append-node-circle:hover,
-.djs-append-nodes:hover .djs-append-node-circle:hover {
+.djs-append-node:hover .djs-append-node-circle:hover {
     width: 20px;
     height: 20px;
     background: var(--element-selected-outline-stroke-color);
@@ -105,7 +105,7 @@
 }
 
 .djs-append-node-circle:hover:after,
-.djs-append-nodes:hover .djs-append-node-circle:hover:after {
+.djs-append-node:hover .djs-append-node-circle:hover:after {
     content: '';
     margin: auto;
     text-align: center;
