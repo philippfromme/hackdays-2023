@@ -80,44 +80,30 @@
 }
 
 .djs-append-node:hover .djs-append-node-circle {
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
     opacity: 1;
-    background: white;
-}
-
-.djs-append-node:hover .djs-append-node-circle:after {
-    content: '+';
-    margin: auto;
-    text-align: center;
-    display: block;
-    color: var(--element-selected-outline-stroke-color);
-    font-size: 24px;
-    line-height: 18px;
+    background-color: white;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAYAAADFeBvrAAAACXBIWXMAAAsTAAALEwEAmpwYAAAArElEQVR4nO3YUQoCMQyE4VxST9bxiNtjRMQHQSyLpZDp8n+Q9w4TFrIRAIAZLe+h7KHMr+nxyFtsRz/DfEJtR8Mw79mOCGRONGRONGRONGRONGRONGRObg214T1TPX3unvIMk/P3VP2jF69s9YMJdOaCDfXyR2swLY//A70+jY6hWh41v8GWr0w1ArkTK2dONGRONGRONGRONGRO12uor71nqo3uqbJ7BgDiAp6srMQ69O0azwAAAABJRU5ErkJggg==);
+    background-size: 16px;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .djs-append-node-circle:hover,
 .djs-append-node:hover .djs-append-node-circle:hover {
-    width: 20px;
-    height: 20px;
-    background: var(--element-selected-outline-stroke-color);
+    width: 24px;
+    height: 24px;
+    background-color: var(--element-selected-outline-stroke-color);
     border-color: var(--element-selected-outline-stroke-color);
-}
-
-.djs-append-node-circle:hover:after,
-.djs-append-node:hover .djs-append-node-circle:hover:after {
-    content: '';
-    margin: auto;
-    text-align: center;
-    display: block;
-    color: white;
-    font-size: 24px;
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAYAAADFeBvrAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAlUlEQVR4nO3YPQqEQBAF4b6ke//IOUYtJpusPzDJvJb6QiMfBUJbJUmaAHyAwb/j2VbdcD7mN6q64UF1g4PCYaFwWCgcFgqHhcJhoXCkFeL6nlltTN1ToWPm7ynClYPClYWI/ijsM4W20FH7kt9gT29V3eCgcFgoHBYKh4XCYaFwWCgcLyw07k6A6obre2rNPSNJ9QZfu2Xwp8bAILUAAAAASUVORK5CYII=);
-    line-height: 18px;
     background-size: 16px;
     background-position: center;
-    width: 20px;
-    height: 20px;
+    background-repeat: no-repeat;
+}
+
+.djs-append-node.hide {
+    display: none !important;
 }
 
 /* Hack to hide old pad */
