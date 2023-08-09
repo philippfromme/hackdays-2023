@@ -60,6 +60,7 @@
     "webpack": "^5.75.0"
   },
   "dependencies": {
+    "bpmn-js-color-picker": "^0.6.1",
     "min-dash": "^4.1.1",
     "min-dom": "^4.1.0"
   },

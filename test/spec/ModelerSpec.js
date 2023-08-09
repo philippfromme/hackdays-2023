@@ -4,6 +4,8 @@ import {
 
 import Modeler from 'bpmn-js/lib/Modeler';
 
+import BpmnColorPickerModule from 'bpmn-js-color-picker';
+
 import FooModule from '../../lib';
 
 insertCSS('diagram-js', require('bpmn-js/dist/assets/diagram-js.css'));
@@ -32,6 +34,7 @@ describe('linting', function() {
     modeler = new Modeler({
       container: el,
       additionalModules: [
+        BpmnColorPickerModule,
         FooModule
       ]
     });
