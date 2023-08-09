@@ -33,3 +33,7 @@
 .djs-context-pad.next .entry:active {
     background: #e5e5e5;
 }
+
+.djs-context-pad.next.open {
+  display: flex;
+}
