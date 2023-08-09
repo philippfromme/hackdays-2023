@@ -21,13 +21,12 @@
 .djs-context-pad .entry {
   width: 40px;
   height: 40px;
-  line-height: 42px;
-  text-align: center;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 22px;
   cursor: default;
   pointer-events: all;
-  vertical-align: middle;
   margin: 0;
   background: none;
   box-shadow: none;
@@ -50,7 +49,7 @@
   display: flex;
 }
 
-.djs-context-pad .divider {
+.djs-context-pad .separator {
   position: relative;
   top: 10px;
   width: 1px;
@@ -106,10 +105,70 @@
     display: none !important;
 }
 
-/* Hack to hide old pad */
-
-/*
-.djs-context-pad:not(.next) {
-    display: none !important;
+/* Horizontal Popup Styles */
+.djs-popup.horizontal {
+  background: var(--context-pad-background-color);
+  color: var(--context-pad-color);
+  border-radius: 4px;
+  /* transform: translate(-50%, -100%); */
+  transform-origin: bottom left;
 }
-*/
+
+.djs-popup.horizontal .djs-popup-results,
+.djs-popup.horizontal .djs-popup-group {
+  display: flex;
+  flex-direction: row;
+}
+
+.djs-popup.horizontal .djs-popup-results {
+  margin: 0;
+  padding: 0;
+}
+
+.djs-popup.horizontal .djs-popup-group {
+  padding: 0px 4px;
+}
+
+.djs-popup.horizontal .djs-popup-body .entry {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  line-height: 42px;
+  text-align: center;
+  display: inline-block;
+  font-size: 22px;
+  cursor: default;
+  pointer-events: all;
+  vertical-align: middle;
+  margin: 0;
+  background: none;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+.djs-popup.horizontal .djs-popup-body .djs-popup-entry-content {
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.djs-popup.horizontal .djs-popup-body .entry:hover {
+  background: var(--context-pad-hover-color);
+}
+
+.djs-popup.horizontal .djs-popup-body .entry:active {
+  background: var(--context-pad-hover-color);
+}
+
+.djs-popup.horizontal .separator {
+  position: relative;
+  top: 10px;
+  width: 1px;
+  height: 20px;
+  background: var(--context-pad-divider-color);
+}
+
+.djs-popup.horizontal .djs-popup-entry-icon {
+  width: 24px;
+  height: 24px;
+}
