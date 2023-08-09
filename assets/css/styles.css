@@ -1,9 +1,15 @@
+:root {
+  --context-pad-background-color: hsla(0, 0%, 22%, 1);
+  --context-pad-color: hsla(0, 0%, 100%, 1);
+  --context-pad-divider-color: hsla(0, 0%, 9%, 1);
+  --context-pad-hover-color: hsla(0, 0%, 55%, 0.16);
+}
+
 .djs-context-pad {
   display: flex;
-  background: white;
-  box-shadow: 0px 2px 6px rgba(0,0,0,0.25);
+  background: var(--context-pad-background-color);
+  color: var(--context-pad-color);
   border-radius: 4px;
-
   transform: translate(-50%, -100%);
 }
 
@@ -28,20 +34,28 @@
   border-radius: 0;
 }
 
-.djs-context-pad .group:not(:last-child) {
-  border-right: 1px solid #dadada;
+.djs-context-pad .group {
+  border-right: none;
 }
 
 .djs-context-pad .entry:hover {
-  background: #f7f7f7;
+  background: var(--context-pad-hover-color);
 }
 
 .djs-context-pad .entry:active {
-  background: #e5e5e5;
+  background: var(--context-pad-hover-color);
 }
 
 .djs-context-pad.open {
   display: flex;
+}
+
+.djs-context-pad .divider {
+  position: relative;
+  top: 10px;
+  width: 1px;
+  height: 20px;
+  background: var(--context-pad-divider-color);
 }
 
 
