@@ -92,17 +92,24 @@
 
 .djs-append-node-circle:hover:after,
 .djs-append-nodes:hover .djs-append-node-circle:hover:after {
-    content: '+';
+    content: '';
     margin: auto;
     text-align: center;
     display: block;
     color: white;
     font-size: 24px;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAYAAADFeBvrAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAlUlEQVR4nO3YPQqEQBAF4b6ke//IOUYtJpusPzDJvJb6QiMfBUJbJUmaAHyAwb/j2VbdcD7mN6q64UF1g4PCYaFwWCgcFgqHhcJhoXCkFeL6nlltTN1ToWPm7ynClYPClYWI/ijsM4W20FH7kt9gT29V3eCgcFgoHBYKh4XCYaFwWCgcLyw07k6A6obre2rNPSNJ9QZfu2Xwp8bAILUAAAAASUVORK5CYII=);
     line-height: 18px;
+    background-size: 16px;
+    background-position: center;
+    width: 20px;
+    height: 20px;
 }
 
 /* Hack to hide old pad */
 
+/*
 .djs-context-pad:not(.next) {
     display: none !important;
 }
+*/
