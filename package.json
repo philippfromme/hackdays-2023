@@ -61,6 +61,7 @@
   },
   "dependencies": {
     "bpmn-js-color-picker": "bpmn-io/bpmn-js-color-picker#hackdays",
+    "bpmn-js-create-append-anything": "^0.3.0",
     "min-dash": "^4.1.1",
     "min-dom": "^4.1.0"
   },
