@@ -105,6 +105,128 @@
     display: none !important;
 }
 
+/* Boundary event appender */
+
+.djs-boundary-event-appender {
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.djs-boundary-event-appender-circle {
+    display: block;
+    width: 6px;
+    height: 6px;
+    background-color: var(--element-selected-outline-stroke-color);
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAYAAADFeBvrAAAACXBIWXMAAAsTAAALEwEAmpwYAAAArElEQVR4nO3YUQoCMQyE4VxST9bxiNtjRMQHQSyLpZDp8n+Q9w4TFrIRAIAZLe+h7KHMr+nxyFtsRz/DfEJtR8Mw79mOCGRONGRONGRONGRONGRONGRObg214T1TPX3unvIMk/P3VP2jF69s9YMJdOaCDfXyR2swLY//A70+jY6hWh41v8GWr0w1ArkTK2dONGRONGRONGRONGRO12uor71nqo3uqbJ7BgDiAp6srMQ69O0azwAAAABJRU5ErkJggg==);
+    background-size: 16px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 2px solid var(--element-selected-outline-stroke-color);
+    border-radius: 50px;
+    opacity: 0.6;
+    margin: auto;
+    transition: 0.1s;
+}
+
+.djs-boundary-event-appender-circle:after {
+    content: '';
+    width: 18px;
+    height: 18px;
+    border: 2px solid transparent;
+    border-radius: 50px;
+    background: transparent;
+    display: none;
+    opacity: 0;
+    margin: 1px;
+    transition: 0.2s;
+}
+
+.djs-boundary-event-appender:hover .djs-boundary-event-appender-circle {
+    width: 24px;
+    height: 24px;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAYAAADFeBvrAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAlUlEQVR4nO3YPQqEQBAF4b6ke//IOUYtJpusPzDJvJb6QiMfBUJbJUmaAHyAwb/j2VbdcD7mN6q64UF1g4PCYaFwWCgcFgqHhcJhoXCkFeL6nlltTN1ToWPm7ynClYPClYWI/ijsM4W20FH7kt9gT29V3eCgcFgoHBYKh4XCYaFwWCgcLyw07k6A6obre2rNPSNJ9QZfu2Xwp8bAILUAAAAASUVORK5CYII=);
+    background-size: 16px;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 1;
+}
+
+.djs-boundary-event-appender:hover .djs-boundary-event-appender-circle:after {
+    content: '';
+    border: 2px solid white;
+    display: block;
+    opacity: 1;
+}
+
+.djs-boundary-event-appender.hide {
+    display: none !important;
+}
+
+
+/* Boundary event appender */
+
+.djs-boundary-event-appender {
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.djs-boundary-event-appender-circle {
+    display: block;
+    width: 6px;
+    height: 6px;
+    background-color: var(--element-selected-outline-stroke-color);
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAYAAADFeBvrAAAACXBIWXMAAAsTAAALEwEAmpwYAAAArElEQVR4nO3YUQoCMQyE4VxST9bxiNtjRMQHQSyLpZDp8n+Q9w4TFrIRAIAZLe+h7KHMr+nxyFtsRz/DfEJtR8Mw79mOCGRONGRONGRONGRONGRONGRObg214T1TPX3unvIMk/P3VP2jF69s9YMJdOaCDfXyR2swLY//A70+jY6hWh41v8GWr0w1ArkTK2dONGRONGRONGRONGRO12uor71nqo3uqbJ7BgDiAp6srMQ69O0azwAAAABJRU5ErkJggg==);
+    background-size: 16px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 2px solid var(--element-selected-outline-stroke-color);
+    border-radius: 50px;
+    opacity: 0.6;
+    margin: auto;
+    transition: 0.1s;
+}
+
+.djs-boundary-event-appender-circle:after {
+    content: '';
+    width: 18px;
+    height: 18px;
+    border: 2px solid transparent;
+    border-radius: 50px;
+    background: transparent;
+    display: none;
+    opacity: 0;
+    margin: 1px;
+    transition: 0.2s;
+}
+
+.djs-boundary-event-appender:hover .djs-boundary-event-appender-circle {
+    width: 24px;
+    height: 24px;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAYAAADFeBvrAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAlUlEQVR4nO3YPQqEQBAF4b6ke//IOUYtJpusPzDJvJb6QiMfBUJbJUmaAHyAwb/j2VbdcD7mN6q64UF1g4PCYaFwWCgcFgqHhcJhoXCkFeL6nlltTN1ToWPm7ynClYPClYWI/ijsM4W20FH7kt9gT29V3eCgcFgoHBYKh4XCYaFwWCgcLyw07k6A6obre2rNPSNJ9QZfu2Xwp8bAILUAAAAASUVORK5CYII=);
+    background-size: 16px;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 1;
+}
+
+.djs-boundary-event-appender:hover .djs-boundary-event-appender-circle:after {
+    content: '';
+    border: 2px solid white;
+    display: block;
+    opacity: 1;
+}
+
+.djs-boundary-event-appender.hide {
+    display: none !important; 
+}
+
+ 
 /* Horizontal Popup Styles */
 .djs-popup.horizontal {
   background: var(--context-pad-background-color);
