@@ -39,7 +39,6 @@
     "chai": "^4.3.7",
     "cpx": "^1.5.0",
     "cross-env": "^7.0.3",
-    "diagram-js": "^12.2.0",
     "eslint": "^8.34.0",
     "eslint-plugin-bpmn-io": "^1.0.0",
     "karma": "^6.4.1",
@@ -60,14 +59,14 @@
     "webpack": "^5.75.0"
   },
   "dependencies": {
-    "bpmn-js-color-picker": "bpmn-io/bpmn-js-color-picker#hackdays",
+    "bpmn-js-color-picker": "github:bpmn-io/bpmn-js-color-picker#hackdays",
     "bpmn-js-create-append-anything": "^0.3.0",
+    "diagram-js": "github:bpmn-io/diagram-js#hackdays",
     "min-dash": "^4.1.1",
     "min-dom": "^4.1.0"
   },
   "peerDependencies": {
-    "bpmn-js": "*",
-    "diagram-js": "*"
+    "bpmn-js": "*"
   },
   "files": [
     "dist"
