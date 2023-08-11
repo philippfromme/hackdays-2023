@@ -1,5 +1,7 @@
 import Modeler from 'bpmn-js/lib/Modeler';
 
+import BpmnColorPickerModule from 'bpmn-js-color-picker';
+
 import FeaturesModule from './features';
 
 import xml from './diagram.bpmn';
@@ -17,7 +19,8 @@ const modeler = new Modeler({
     bindTo: window
   },
   additionalModules: [
-    FeaturesModule
+    FeaturesModule,
+    BpmnColorPickerModule
   ]
 });
 
