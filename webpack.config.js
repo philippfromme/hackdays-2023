@@ -40,7 +40,7 @@ module.exports = {
       template: './src/index.html',
     })
   ],
-  devtool: false,
+  devtool: 'eval-source-map',
   devServer: {
     hot: false,
     liveReload: false
