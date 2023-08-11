@@ -6,7 +6,7 @@
   "module": "dist/index.esm.js",
   "source": "lib/index.js",
   "scripts": {
-    "build": "webpack --mode=production --node-env production",
+    "build": "webpack --mode=development --node-env development",
     "start": "webpack serve --open --mode=development --node-env development",
     "deploy": "npm run build && gh-pages -d dist"
   },

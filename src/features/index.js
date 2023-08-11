@@ -9,9 +9,11 @@ import CustomAppendMenuProvider from './CustomAppendMenuProvider';
 import AppendPreview from 'bpmn-js/lib/features/append-preview/AppendPreview';
 import Connect from './Connect';
 
+import BpmnColorPickerModule from 'bpmn-js-color-picker';
+
 export default {
   __init__: [ 'contextPad', 'contextPadProvider', 'appendNode', 'appendNodeProvider', 'boundaryEventAppender', 'boundaryEventAppenderProvider', 'appendMenuProvider', 'appendPreview', 'connect' ],
-  __depends__: [ CreateAppendAnythingModule ],
+  __depends__: [ CreateAppendAnythingModule, BpmnColorPickerModule ],
   contextPad: [ 'type', ContextPad ],
   contextPadProvider: [ 'type', ContextPadProvider ],
   appendNode: [ 'type', AppendNode ],

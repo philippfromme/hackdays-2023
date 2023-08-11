@@ -3,7 +3,21 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: path.resolve(__dirname, './src/app.js'),
+  mode: 'development',
+  entry: {
+    app: path.resolve(__dirname, './src/app.js'),
+    // features: path.resolve(__dirname, './src/features/index.js')
+  },
+  // experiments: {
+  //   outputModule: true
+  // },
+  output: {
+    path: path.resolve(__dirname, './dist'),
+    filename: '[name].bundle.js',
+    // library: {
+    //   type: 'module'
+    // }
+  },
   module: {
     rules: [
       {
@@ -20,10 +34,6 @@ module.exports = {
         use: [ 'style-loader', 'css-loader' ],
       }
     ]
-  },
-  output: {
-    path: path.resolve(__dirname, './dist'),
-    filename: 'app.js'
   },
   plugins: [
     new HtmlWebpackPlugin({
