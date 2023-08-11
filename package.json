@@ -42,6 +42,7 @@
     "bpmn-js": "github:bpmn-io/bpmn-js#hackdays",
     "bpmn-js-color-picker": "github:bpmn-io/bpmn-js-color-picker#hackdays",
     "bpmn-js-create-append-anything": "^0.3.0",
+    "diagram-js-grid": "^0.2.0",
     "min-dash": "^4.1.1",
     "min-dom": "^4.1.0"
   }

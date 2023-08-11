@@ -11,9 +11,11 @@ import Connect from './Connect';
 
 import BpmnColorPickerModule from 'bpmn-js-color-picker';
 
+import GridModule from 'diagram-js-grid';
+
 export default {
   __init__: [ 'contextPad', 'contextPadProvider', 'appendNode', 'appendNodeProvider', 'boundaryEventAppender', 'boundaryEventAppenderProvider', 'appendMenuProvider', 'appendPreview', 'connect' ],
-  __depends__: [ CreateAppendAnythingModule, BpmnColorPickerModule ],
+  __depends__: [ CreateAppendAnythingModule, BpmnColorPickerModule, GridModule ],
   contextPad: [ 'type', ContextPad ],
   contextPadProvider: [ 'type', ContextPadProvider ],
   appendNode: [ 'type', AppendNode ],

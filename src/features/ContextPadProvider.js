@@ -474,7 +474,12 @@ ContextPadProvider.prototype.getContextPadEntries = function(element) {
 
       'connect': {
         group: 'connect',
-        className: 'bpmn-icon-connection-multi',
+        html: `<div class="entry">
+          <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="24" height="24" transform="translate(0.948242)" fill="transparent" style="mix-blend-mode:multiply"/>
+            <path d="M8.44824 4.5V6H17.8907L5.44824 18.4425L6.50574 19.5L18.9482 7.0575V16.5H20.4482V4.5H8.44824Z" fill="currentColor"/>
+          </svg>
+        </div>`,
         title: translate(
           'Connect using ' +
             (businessObject.isForCompensation
@@ -494,7 +499,12 @@ ContextPadProvider.prototype.getContextPadEntries = function(element) {
     assign(actions, {
       'connect': {
         group: 'connect',
-        className: 'bpmn-icon-connection-multi',
+        html: `<div class="entry">
+        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="24" height="24" transform="translate(0.948242)" fill="transparent" style="mix-blend-mode:multiply"/>
+          <path d="M8.44824 4.5V6H17.8907L5.44824 18.4425L6.50574 19.5L18.9482 7.0575V16.5H20.4482V4.5H8.44824Z" fill="currentColor"/>
+        </svg>
+      </div>`,
         title: translate('Connect using Association'),
         action: {
           click: startConnect,
@@ -508,7 +518,12 @@ ContextPadProvider.prototype.getContextPadEntries = function(element) {
     assign(actions, {
       'connect': {
         group: 'connect',
-        className: 'bpmn-icon-connection-multi',
+        html: `<div class="entry">
+        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="24" height="24" transform="translate(0.948242)" fill="transparent" style="mix-blend-mode:multiply"/>
+          <path d="M8.44824 4.5V6H17.8907L5.44824 18.4425L6.50574 19.5L18.9482 7.0575V16.5H20.4482V4.5H8.44824Z" fill="currentColor"/>
+        </svg>
+      </div>`,
         title: translate('Connect using DataInputAssociation'),
         action: {
           click: startConnect,

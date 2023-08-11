@@ -13,7 +13,11 @@ import 'bpmn-js/dist/assets/bpmn-js.css';
 import 'bpmn-js/dist/assets/bpmn-font/css/bpmn.css';
 import './app.css';
 
-const modeler = new Modeler({
+if (window.modeler) {
+  window.modeler.destroy();
+}
+
+window.modeler = new Modeler({
   container: '#app',
   keyboard: {
     bindTo: window
@@ -23,4 +27,4 @@ const modeler = new Modeler({
   ]
 });
 
-modeler.importXML(xml);
+window.modeler.importXML(xml);

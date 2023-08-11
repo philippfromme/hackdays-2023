@@ -294,3 +294,36 @@
   width: 24px;
   height: 24px;
 }
+
+/* Palette */
+
+.djs-palette {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 48px !important;
+  background-color: white;
+  border: none;
+  border-right: solid 1px hsl(0, 0%, 87%);
+  border-radius: 0;
+}
+
+.djs-palette .entry {
+  /* border: solid 1px fuchsia; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.djs-palette .separator {
+  border-bottom-color: hsl(0, 0%, 87%);
+}
+
+/* Canvas */
+.djs-container {
+  background-color: #f4f4f4;
+}
+
+defs pattern circle {
+  fill: hsl(0, 0%, 87%) !important;
+}
