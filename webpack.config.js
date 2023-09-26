@@ -6,17 +6,17 @@ module.exports = {
   mode: 'development',
   entry: {
     app: path.resolve(__dirname, './src/app.js'),
-    features: path.resolve(__dirname, './src/features/index.js')
+    // features: path.resolve(__dirname, './src/features/index.js')
   },
-  experiments: {
-    outputModule: true
-  },
+  // experiments: {
+  //   outputModule: true
+  // },
   output: {
     path: path.resolve(__dirname, './dist'),
     filename: '[name].bundle.js',
-    library: {
-      type: 'module'
-    }
+    // library: {
+    //   type: 'module'
+    // }
   },
   module: {
     rules: [
