@@ -311,7 +311,7 @@ ContextPadProvider.prototype.getContextPadEntries = function(element) {
             });
 
             popupMenu.open(element, 'bpmn-replace', position, {
-              title: translate('Foobar'),
+              title: translate('Change element'),
               width: 300,
               search: true
             });
